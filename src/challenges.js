@@ -1,6 +1,21 @@
 // Desafio 1 - Crie a função compareTrue
+function compareTrue(pescador1, pescador2){
+  if(pescador1 && pescador2){
+    return true
+  }else{
+    return false
+  }
+}
+compareTrue(true, false);
 
 // Desafio 2 - Crie a função splitSentence
+function splitSentence(frase){
+
+  let palavras= frase.split(' ');
+
+    return palavras
+}
+console.log(splitSentence("Vamo que Vamo"))
 
 // Desafio 3 - Crie a função concatName
 
