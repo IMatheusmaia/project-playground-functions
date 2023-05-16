@@ -81,21 +81,25 @@ calcAllAreas();
 
 // Desafio 7 - Crie a função catAndMouse
 function catAndMouse(mouse, cat1, cat2){
-  let distance1= mouse - cat1;
-  let distance2= mouse - cat2;
-  
+  let distance1= Math.abs(mouse-cat1);
+  let distance2= Math.abs(mouse-cat2);
     if(distance1 < distance2 && distance1 !== distance2){
-      return `cat1`
+        return `cat1`
     }else if(distance2 < distance1 && distance2 !== distance1){
       return `cat2`
     }else if(distance1 == distance2){
       return `os gatos trombam e o rato foge`
     }
+  
 
 }
-console.log(catAndMouse(10, 8, 9));
+console.log(catAndMouse(10, 5, 5));
 
 // Desafio 8 - Crie a função fizzBuzz
+function fizzBuzz(){
+
+}
+fizzBuzz()
 
 // Desafio 9 - Crie a função encode e a função decode
 
