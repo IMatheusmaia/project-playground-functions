@@ -103,7 +103,7 @@ function fizzBuzz(listNumbers){
         listStrings.push('bug!');
       }else if(listNumbers[i]% 3 == 0 && listNumbers[i]% 5 !== 0){
         listStrings.push('fizz');
-      }else if(listNumbers[i]% 5 !== 0 && listNumbers[i]% 3 !== 0){
+      }else if(listNumbers[i]% 5 == 0 && listNumbers[i]% 3 !== 0){
         listStrings.push('buzz');
       }else if(listNumbers[i]% 3 == 0 && listNumbers[i]% 5 == 0){
         listStrings.push('fizzBuzz');
@@ -111,9 +111,7 @@ function fizzBuzz(listNumbers){
     }
       return listStrings;
 }
-fizzBuzz([2, 15, 7, 9, 45]);
-
-//teste de push
+console.log(fizzBuzz([2, 15, 7, 9, 45]));
 
 // Desafio 9 - Crie a função encode e a função decode
 
