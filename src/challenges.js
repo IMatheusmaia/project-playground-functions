@@ -60,20 +60,20 @@ calcTriangleArea();
 
 function calcRectangleArea(base, height){
   let rectangleArea= (base*height);
-    return rectangleArea
+    return rectangleArea;
 
 }
 calcRectangleArea();
 
 function calcAllAreas(base, height, form){
   if(form === 'triângulo'){
-    return `O valor da área do triângulo é de: ${calcTriangleArea(base,height)}`
+    return `O valor da área do triângulo é de: ${calcTriangleArea(base,height)}`;
 
   }else if(form === 'retângulo'){
-    return `O valor da área do retângulo é de: ${calcRectangleArea(base, height)}`
+    return `O valor da área do retângulo é de: ${calcRectangleArea(base, height)}`;
 
   }else{
-    return `Não foi possível fazer o cálculo, insira uma forma geométrica válida`
+    return `Não foi possível fazer o cálculo, insira uma forma geométrica válida`;
   }
 
 }
@@ -84,22 +84,34 @@ function catAndMouse(mouse, cat1, cat2){
   let distance1= Math.abs(mouse-cat1);
   let distance2= Math.abs(mouse-cat2);
     if(distance1 < distance2 && distance1 !== distance2){
-        return `cat1`
+        return `cat1`;
     }else if(distance2 < distance1 && distance2 !== distance1){
-      return `cat2`
+      return `cat2`;
     }else if(distance1 == distance2){
-      return `os gatos trombam e o rato foge`
+      return `os gatos trombam e o rato foge`;
     }
   
 
 }
-console.log(catAndMouse(10, 5, 5));
+catAndMouse(10, 5, 5);
 
 // Desafio 8 - Crie a função fizzBuzz
-function fizzBuzz(){
-
+function fizzBuzz(listNumbers){
+  let listStrings= []
+    for(let i=0; i<listNumbers.length; i++){
+      if(listNumbers[i]% 3 !== 0 && listNumbers[i]% 5 !== 0){
+        listStrings.push('bug!');
+      }else if(listNumbers[i]% 3 == 0 && listNumbers[i]% 5 !== 0){
+        listStrings.push('fizz');
+      }else if(listNumbers[i]% 5 !== 0 && listNumbers[i]% 3 !== 0){
+        listStrings.push('buzz');
+      }else if(listNumbers[i]% 3 == 0 && listNumbers[i]% 5 == 0){
+        listStrings.push('fizzBuzz');
+      }
+    }
+      return listStrings;
 }
-fizzBuzz()
+fizzBuzz([2, 15, 7, 9, 45]);
 
 // Desafio 9 - Crie a função encode e a função decode
 
