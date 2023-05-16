@@ -113,6 +113,8 @@ function fizzBuzz(listNumbers){
 }
 fizzBuzz([2, 15, 7, 9, 45]);
 
+//teste de push
+
 // Desafio 9 - Crie a função encode e a função decode
 
 // Desafio 10 - Crie a função techList
