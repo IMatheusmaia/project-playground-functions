@@ -1,6 +1,6 @@
 // Desafio 1 - Crie a função compareTrue
-function compareTrue(pescador1, pescador2){
-  if(pescador1 && pescador2){
+function compareTrue(fishers1, fishers2){
+  if(fishers1 && fishers2){
     return true
   }else{
     return false
@@ -11,17 +11,38 @@ compareTrue(true, false);
 // Desafio 2 - Crie a função splitSentence
 function splitSentence(frase){
 
-  let palavras= frase.split(' ');
+  let words= frase.split(' ');
 
-    return palavras
+    return words
 }
-console.log(splitSentence("Vamo que Vamo"))
+splitSentence("Vamo que Vamo");
 
 // Desafio 3 - Crie a função concatName
+function concatName(listNames){
+  let names= '';
+    names+= listNames[listNames.length-1];
+    names+= ', ';
+    names+= listNames[0];
+
+    return names
+}
+concatName(['foguete', 'não', 'tem', 'ré']);
 
 // Desafio 4 - Crie a função footballPoints
+function footballPoints(wins, ties){
+  let winPoints= 3;
+  let tiesPoints= 1;
+  let teamPoints= wins * winPoints + ties * tiesPoints;
+    return teamPoints
+
+}
+footballPoints(14, 8);
 
 // Desafio 5 - Crie a função highestCount
+function highestCount(listNumbers){
+  
+}
+console.log(highestCount ([0, 4, 4, 13, 9, 2, 1]));
 
 // Desafio 6 - Crie as funções calcTriangleArea, calcRectangleArea e calcAllAreas
 
