@@ -154,7 +154,8 @@ function decode(word){
       let newLetter = word[i].replace('3', 'i');
       decodeWord += newLetter;
     } else if (word[i] === '4') {
-      word[i].replace('4', 'o');
+      let newLetter = word[i].replace('4', 'o');
+      decodeWord += newLetter;
     } else if (word[i] === '5') {
       let newLetter = word[i].replace('5', 'u');
       decodeWord += newLetter;
@@ -166,7 +167,7 @@ function decode(word){
   }
   return decodeWord;
 }
-decode('h3 th2r2!');
+decode('h3 h2ll4');
 // Desafio 10 - Crie a função techList
 
 // Não modifique essas linhas
