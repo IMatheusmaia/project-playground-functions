@@ -127,7 +127,8 @@ function encode(word) {
       let newLetter = word[i].replace('i', '3');
       newWord += newLetter;
     } else if (word[i] === 'o') {
-      word[i].replace('o', '4');
+      let newLetter= word[i].replace('o', '4');
+        newWord+= newLetter;
     } else if (word[i] === 'u') {
       let newLetter = word[i].replace('u', '5');
       newWord += newLetter;
@@ -169,6 +170,21 @@ function decode(word){
 }
 decode('h3 h2ll4');
 // Desafio 10 - Crie a função techList
+  function techList(listNames, person){
+    let listObjects= [];
+      if(person ===''){
+        return listNames= [];
+      }else if(person.length > 0){
+        for(let i=0; 0<listNames.length; i++){
+          listObjects.push({
+            tech: `${listNames[i]}`,
+            name: `${person}`
+          })
+        }
+          return listObjects
+      }
+  }
+    console.log(techList (['React', 'Jest', 'HTML', 'CSS', 'JavaScript'], 'Matheus'));
 
 // Não modifique essas linhas
 module.exports = {
