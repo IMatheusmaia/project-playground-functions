@@ -170,21 +170,20 @@ function decode(word){
 }
 decode('h3 h2ll4');
 // Desafio 10 - Crie a função techList
-  // function techList(listNames, person){
-  //   let listObjects= [];
-  //     if(person ===''){
-  //       return listNames= [];
-  //     }else if(person.length > 0){
-  //       for(let i=0; 0<listNames.length; i++){
-  //         listObjects.push({
-  //           tech: `${listNames[i]}`,
-  //           name: `${person}`
-  //         })
-  //       }
-  //         return listObjects
-  //     }
-  // }
-  //   console.log(techList (['React', 'Jest', 'HTML', 'CSS', 'JavaScript'], 'Matheus'));
+  function techList(listNames, person){
+    let listObjects= [];
+      if(person ===''){
+        return listNames= [];
+      }else if(person.length > 0){
+        for(let i=0; i<listNames.length; i++){
+          let object= {tech: listNames[i],
+                      name: person}
+            listObjects.push(object)
+        }
+          return listObjects
+      }
+  }
+    techList (['React', 'Jest', 'HTML', 'CSS', 'JavaScript'], 'Matheus');
 
 // Não modifique essas linhas
 module.exports = {
