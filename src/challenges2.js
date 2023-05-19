@@ -40,7 +40,11 @@ function triangleCheck(lineA, lineB, lineC){
   if(lineAb > lineC && lineBc > lineA && lineCa > lineB){
     if(diffLineAb < lineC && diffLineBc < lineA && diffLineCa < lineB){
       return true
+    }else{
+      return false
     }
+  }else{
+    return false
   }
 }
 triangleCheck(10, 14, 8);
