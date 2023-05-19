@@ -37,8 +37,8 @@ function triangleCheck(lineA, lineB, lineC){
   let diffLineBc= Math.abs(lineB-lineC);
   let diffLineCa= Math.abs(lineC-lineA);
 
-  if(lineAb > lineC || lineBc > lineA || lineCa > lineB){
-    if(diffLineAb < lineC || diffLineBc < lineA || diffLineCa < lineB){
+  if(lineAb > lineC && lineBc > lineA && lineCa > lineB){
+    if(diffLineAb < lineC && diffLineBc < lineA && diffLineCa < lineB){
       return true
     }
   }
@@ -46,7 +46,10 @@ function triangleCheck(lineA, lineB, lineC){
 triangleCheck(10, 14, 8);
 
 // Desafio 13 - Crie a função hydrate
+function hydrate(){
 
+}
+hydrate();
 /* eslint no-undef: 0 */
 
 // Não modifique essas linhas
