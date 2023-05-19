@@ -50,10 +50,23 @@ function triangleCheck(lineA, lineB, lineC){
 triangleCheck(10, 14, 8);
 
 // Desafio 13 - Crie a função hydrate
-function hydrate(){
-
+function hydrate(string){
+  let num= 0;
+  let numberList= [];
+  for(let i=0; i<string.length; i++){
+    num = parseInt(string[i]);
+    numberList.push(num);
+  }
+    let newNumberList= numberList.filter(number=>!Number.isNaN(number));
+    let sum= 0
+      for(let i=0; i<newNumberList.length; i++){
+        sum+=newNumberList[i]
+        
+      }
+    
+    return `${sum} copos de água`
 }
-hydrate();
+console.log(hydrate('1 cachaça, 5 cervejas e 1 copo de vinho'));
 /* eslint no-undef: 0 */
 
 // Não modifique essas linhas
