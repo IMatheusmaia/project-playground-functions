@@ -64,7 +64,11 @@ function hydrate(string){
         
       }
     
-    return `${sum} copos de água`
+    if(sum > 1){
+        return `${sum} copos de água`
+    }else{
+      return `1 copo de água`
+    }
 }
 console.log(hydrate('1 cachaça, 5 cervejas e 1 copo de vinho'));
 /* eslint no-undef: 0 */
